@@ -1,5 +1,5 @@
 import { ID, databases, storage } from '@/appwrite';
-import {getTodosGroupedByColumn }from '@/lib/getTodosGroupedByColumn';
+import getTodosGroupedByColumn from '@/lib/getTodosGroupedByColumn';
 import { Board, Column, Todo, TypedColumn } from '@/types';
 import { create } from 'zustand'
 
@@ -39,8 +39,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
 
     getBoard: async () => {
         const board = await getTodosGroupedByColumn();
-
-        set({ board });
+        set({board});
     },
 
     setBoardState: (board) => set({ board }),
