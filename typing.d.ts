@@ -14,4 +14,8 @@ interface Todo{
     $createdAt:string,
     title:string,
     status:TypedColumn,
+    $collectionId: '',
+    $databaseId: '',
+    $updatedAt: '',
+    $permissions: []
 }
