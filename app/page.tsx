@@ -6,7 +6,6 @@ export default function Home() {
       <main>
       {/*Header*/}
       <Header/>
-      {/*Hero Section*/}
       <Board/>
     </main>
   )
